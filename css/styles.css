@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-color {
+    color: #289BDE;
+}
+
+.button-bg {
+    background-color: #289BDE;
+}
+
+
+.carousel-item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgb(0, 0, 0);
+    opacity: 0.3;
+}
+
+/* Carousel Icon Effect */
+.carousel-control-prev-icon {
+    background-color: rgb(151, 151, 151);
+    border-radius: 50%;
+    margin-right: 150px;
+}
+
+.carousel-control-next-icon {
+    background-color: rgb(151, 151, 151);
+    border-radius: 50%;
+    margin-left: 150px;
+}
+
+@media screen and (min-width:576px) and (max-width:767px) {
+    .carousel-control-prev-icon {
+        background-color: rgb(151, 151, 151);
+        border-radius: 50%;
+        margin-right: 150px;
+    }
+
+    .carousel-control-next-icon {
+        background-color: rgb(151, 151, 151);
+        border-radius: 50%;
+        margin-left: 150px;
+    }
+}
+
+@media screen and (min-width:475px) {
+    .carousel-control-next-icon {
+        margin-left: 0px;
+    }
+
+    .carousel-control-prev-icon {
+        margin-right: 0px;
+    }
+}
